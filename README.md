@@ -1,0 +1,1 @@
+Inicialize o programa pela Main
