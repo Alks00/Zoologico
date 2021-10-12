@@ -29,7 +29,7 @@ public class Mamifero extends Animal {
     @Override
     public String toString() {
         String objetoString = super.toString();
-        return objetoString + ", corPelo: " + corPelo;
+        return objetoString + "\nCor do Pelo: " + corPelo + "\n";
     }
 
 }

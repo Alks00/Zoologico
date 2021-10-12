@@ -68,9 +68,9 @@ public abstract class Animal {
     }
 
     public boolean getVoa() {
-        if(!this.voa){
+        /*if(!this.voa){
             System.out.println("Este animal não voa.");
-        }
+        }*/
         return voa;
     }
 
@@ -79,15 +79,14 @@ public abstract class Animal {
     }
 
     public String toString() {
-        String objetoString = "nome: " + nome +
-            ", idade: " + idade + " anos" +
-            ", tamanho: " + String.format("%.2f", tamanho) + " m" + 
-            ", som: " + som + 
-            ", voa: " + voa;
+        String objetoString = "\nVoa: Este animal não pode voar";
         if(voa){
-            objetoString += ", altitudeVoo: " + altitudeVoo + " m";
+            objetoString = "\nVoa: Este animal pode voar\nAltitudeVoo: " + altitudeVoo + " m";
         }
-        return objetoString;
+        return "Nome: " + nome +
+        "\nIdade: " + idade + " anos" +
+        "\nTamanho: " + String.format("%.2f", tamanho) + " m" + 
+        "\nSom: " + som + objetoString;
     }
 
 }

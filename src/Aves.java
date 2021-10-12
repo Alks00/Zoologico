@@ -29,7 +29,7 @@ public class Aves extends Animal {
     @Override
     public String toString() {
         String objetoString = super.toString();
-        return objetoString + ", corPena: " + corPena;
+        return objetoString + "\nCor das Penas: " + corPena + "\n";
     }
 
 }
